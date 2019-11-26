@@ -6,7 +6,7 @@ class Application
     
     if req.path.match(/items/)
       item_name = req.path.split("/").last
-      item = 
+      item = @@items.find
     else
       resp.write "Route not found"
       resp.status = 404
